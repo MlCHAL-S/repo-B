@@ -1,0 +1,10 @@
+name: CI
+
+on:
+  workflow_dispatch:   # allows manual or API triggers
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Repo B workflow triggered!"
