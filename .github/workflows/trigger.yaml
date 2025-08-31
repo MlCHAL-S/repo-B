@@ -2,6 +2,8 @@ name: CI
 
 on:
   workflow_dispatch:   # allows manual or API triggers
+  repository_dispatch:   # trigger from Repo A
+    types: [run-ci]
 
 jobs:
   build:
